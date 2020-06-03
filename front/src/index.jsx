@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 // 全レデューサーの読み込み
 import rootReducer from "./redux/rootReducer";
+import AddScheduleDialog from "./components/AddScheduleDialog/container";
 
 dayjs.locale("ja");
 // storeの作成
@@ -20,6 +21,7 @@ const App = () => (
     <MuiPickersUtilsProvider utils={DayjsUtils}>
       <Navigation />
       <CalendarBoard />
+      <AddScheduleDialog />
     </MuiPickersUtilsProvider>
   </Provider>
 );
